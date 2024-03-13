@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Input type file */
+#imageInput,
+#csv-file {
+  margin: 20px;
+}
+/* image uploading */
+
+#imageContainer {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  /* padding: 2rem; */
+  box-sizing: border-box;
+  background-color: #f5f9fa;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#uploadedImage {
+  display: block;
+  margin-left: 0;
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+#imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* bar code ______________________________________*/
+
+.content {
+  width: 100%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* input{
+  width: 328px;
+  padding: 15px 10px;
+  border: 1.5px solid rgb(52, 51, 51);
+  font-size: 17px;
+  outline: none;
+} */
+
+#barcode {
+  box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+  width: 300px;
+  margin: 30px 0px 30px 0px;
+}
+#butUpload,
+#submit-button {
+  padding: 12px 40px;
+  background-color: rgb(2, 103, 66);
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+}
+
+/*_____________________________________________*/
+
+/*_____page 2 ________*/
+/*table */
+.formContainer,
+#page3 {
+  margin: 0 auto;
+  width: 50%; /* Adjust as needed */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* td {
+  padding: 8px;
+} */
+
+input[type="text"],
+#selectOption,
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+#selectOption,
+input {
+  outline: none;
+  border: 2px solid #f2f2f2; /* Change the color as needed */
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: white;
+}
+
+/*__________________________________*/
+/*___page3____________*/
+/* h1 {
+  text-align: center;
+  margin-bottom: 30px;
+} */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* #my-image {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+} */
+
+.image-container {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f5f9fa;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  object-fit: contain; /* Add this line */
+}
